@@ -1,6 +1,6 @@
 {
   "name": "@doop/service-git",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A GIT service for the Doop framework",
   "repository": {
     "type": "git",
