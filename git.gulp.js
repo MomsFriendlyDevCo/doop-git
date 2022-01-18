@@ -1,7 +1,7 @@
 /**
 * Loads the app.git data structure for Gulp processing
 */
-const git = require('.');
+const git = require('./libs/git');
 const gulp = require('gulp');
 
 gulp.task.once('load:app.git', 'load:app', ()=>
