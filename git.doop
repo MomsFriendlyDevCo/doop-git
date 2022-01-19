@@ -13,7 +13,7 @@ return app.git.current()
 </script>
 
 <script lang="js" backend endpoint>
-var git = require('.');
+const git = require('./libs/git');
 
 app.get('/api/git/history', (req, res) => {
 	git.history({limit: 30})
