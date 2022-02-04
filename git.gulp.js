@@ -1,6 +1,9 @@
 /**
 * Loads the app.git data structure for Gulp processing
 */
+const debug = require('debug')('doop:git');
+debug('Init gulp git');
+
 const git = require('./libs/git');
 const gulp = require('gulp');
 
@@ -12,7 +15,7 @@ gulp.task.once('load:app.git', 'load:app', ()=>
 		})
 );
 
-gulp.task('app.git', 'load:app.git', ()=> console.dump(app.git.current));
+gulp.task('app.git', gulp.series('load:app.git'), ()=> console.dump(app.git.current));
 
 gulp.task('app.git.history', 'load:app.git', ()=>
 	app.git.history()
