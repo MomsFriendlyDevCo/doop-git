@@ -38,7 +38,7 @@ git.history = options => {
 	return exec([
 		'git',
 		'log',
-		'--pretty=format:%H|%h|%cI|%cn|%B---END---',
+		'--pretty="format:%H|%h|%cI|%cn|%B---END---"',
 		`--max-count=${settings.limit}`,
 	], {buffer: true})
 		.then(data => _(data)

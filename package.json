@@ -4,7 +4,7 @@
   "description": "A GIT service for the Doop framework",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MomsFriendlyDevCo/doop-service-git.git"
+    "url": "git+https://github.com/MomsFriendlyDevCo/doop-git.git"
   },
   "keywords": [
     "doop"
@@ -12,9 +12,9 @@
   "author": "Matt Carter <m@ttcarter.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MomsFriendlyDevCo/doop-service-git/issues"
+    "url": "https://github.com/MomsFriendlyDevCo/doop-git/issues"
   },
-  "homepage": "https://github.com/MomsFriendlyDevCo/doop-service-git#readme",
+  "homepage": "https://github.com/MomsFriendlyDevCo/doop-git#readme",
   "dependencies": {
     "@momsfriendlydevco/exec": "^1.5.8",
     "@momsfriendlydevco/gulpy": "^1.4.3",
@@ -23,8 +23,5 @@
     "fs": "^0.0.1-security",
     "hashed-release-name": "^1.0.1",
     "lodash": "^4.17.21"
-  },
-  "workspaces": [
-    "../*"
-  ]
+  }
 }
